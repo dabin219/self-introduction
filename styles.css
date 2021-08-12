@@ -1,0 +1,186 @@
+@charset "utf-8";
+@import "reset.css"
+
+/*시작*/
+
+h3 {
+    font-family: 'Sunflower',san-serif;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.menu * {
+    display: inline;
+}
+.menu {
+    font-size: 14px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+} 
+.menu ul {
+    padding-left: 0px;
+}
+.menu li {
+    margin: 12px;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+b:hover {
+    color:thistle;
+}
+.active{
+    text-decoration: underline;
+    transition: 0.3 ease text-decoration;
+}
+
+
+
+
+
+
+/* page 1 */
+.one {
+    text-align: center;
+    color:white;
+}
+.home {
+    margin-top: 20px;
+}
+.home img {
+    width: 100%; 
+    height: 500px; 
+    vertical-align: middle;
+}
+
+/* page 2 */
+.intext {
+    font-family: 'Nanum Myeongjo', sans-serif;
+    font-size:16px;
+    line-height: 170%;
+    width: 680px;
+    text-align: center;
+    margin-top: 35px;
+    padding-left: 20px;
+    color:white
+}
+
+/* page 3 */
+.three {
+    background-color: rgba(255, 255, 255, 0.37);
+    align-items: center;
+}
+.favorites {
+    display: grid;
+   
+    grid-template-columns: 225px 225px 225px;
+    grid-template-rows: 225px 225px;
+}
+
+.hobby{
+    text-align: center;
+    font-family: 'Sunflower',sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: italic;
+    color:white;
+}
+
+.hobby_img {
+    width: 170px;
+    height: 170px;
+    display: block;
+    margin: 7vh 5vh;
+    margin-bottom: 7px;
+    margin-top:0px;
+    border: solid white 0.25px;
+}
+.hobby_text {
+    margin-bottom: 4px;
+}
+/* page 4 */
+.four {
+    background-color: rgba(255, 255, 255, 0.37);
+}
+.toomuchinfo {
+    display: grid;
+    grid-template-columns: 225px 225px 225px;
+    grid-template-rows: 225px 225px;
+}
+
+.tmi{
+    text-align: center;
+    font-family: 'Sunflower',sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: italic;
+    color:white;
+}
+
+.tmi_img {
+    width: 170px;
+    height: 170px;
+    display: block;
+    margin: 7vh 5vh;
+    margin-bottom: 7px;
+    margin-top:0px;
+    border: solid white 0.25px;
+}
+.tmi_text {
+    margin-bottom: 4px;
+}
+/* page 5 */
+
+.five {
+    text-align: center;
+    align-items: center;
+    color: thistle;
+    display:inline;
+}
+.five h5 {
+    font-family: 'Nanum Myeongjo', sans-serif;;
+    color: white;
+}
+.five a:hover {
+    color:thistle;
+}
+.ct {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 25px;
+    font-family: 'Sunflower', sans-serif;
+    text-decoration: underline;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    margin: 35px;
+}
+
+.footer {
+    width:100%;
+    left:0;
+    color:white;
+    bottom:0;
+    font-size: 10px;
+    position:fixed;
+    align-items: center;
+    margin-bottom: 10px;
+}
