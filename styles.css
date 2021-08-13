@@ -1,32 +1,48 @@
-@charset "utf-8";
 @import "reset.css"
+@charset "utf-8";{}
 
-/*시작*/
-
-h3 {
-    font-family: 'Sunflower',san-serif;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    font-weight: lighter;
-    margin-top: 50px;
-    font-size: 20px;
+/*scroll*/
+body {
+    overflow: hidden;
+    font-family: 'Exo 2', sans-serif;
+    background-image: url(13.jpeg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#container{
+    width:100%;
+    height:100vh; 
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+.list{
+    width:100%; 
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
 }
 
-.menu * {
+/*nav*/
+.menu *{
     display: inline;
 }
 .menu {
     font-size: 14px;
-    font-style: italic;
     align-items: center;
     text-align: center;
-    padding-top: 50px;
     position: fixed;
+    padding-top: 50px;
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 50px;
 } 
 .menu ul {
     padding-left: 0px;
@@ -38,140 +54,104 @@ h3 {
     color: white;
     text-decoration: none;
 }
-b:hover {
+.menu a:hover {
     color:thistle;
 }
-.active{
-    text-decoration: underline;
-    transition: 0.3 ease text-decoration;
-}
-
-
-
-
-
 
 /* page 1 */
 .one {
     text-align: center;
     color:white;
 }
-.home {
-    margin-top: 20px;
-}
-.home img {
-    width: 100%; 
-    height: 500px; 
-    vertical-align: middle;
-}
 
 /* page 2 */
 .intext {
-    font-family: 'Nanum Myeongjo', sans-serif;
-    font-size:16px;
-    line-height: 170%;
-    width: 680px;
+    width: 780px;
     text-align: center;
-    margin-top: 35px;
-    padding-left: 20px;
     color:white
+}
+.intext p {
+    font-size:15px;
+    line-height: 170%;
 }
 
 /* page 3 */
 .three {
-    background-color: rgba(255, 255, 255, 0.37);
     align-items: center;
+    text-align: center;
+    color: white;
 }
 .favorites {
     display: grid;
-   
     grid-template-columns: 225px 225px 225px;
     grid-template-rows: 225px 225px;
 }
-
 .hobby{
-    text-align: center;
-    font-family: 'Sunflower',sans-serif;
     display: inline-block;
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-    font-style: italic;
-    color:white;
+    font-size: 13px;
 }
-
 .hobby_img {
-    width: 170px;
-    height: 170px;
-    display: block;
-    margin: 7vh 5vh;
-    margin-bottom: 7px;
-    margin-top:0px;
+    width: 200px;
+    height: 190px;
+    display: inline-block;
+    margin:0px;
     border: solid white 0.25px;
 }
 .hobby_text {
+    margin-top: 0;
     margin-bottom: 4px;
 }
+
 /* page 4 */
 .four {
-    background-color: rgba(255, 255, 255, 0.37);
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 .toomuchinfo {
     display: grid;
     grid-template-columns: 225px 225px 225px;
     grid-template-rows: 225px 225px;
 }
-
 .tmi{
-    text-align: center;
-    font-family: 'Sunflower',sans-serif;
     display: inline-block;
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-    font-style: italic;
-    color:white;
+    font-size: 13px;
 }
-
 .tmi_img {
-    width: 170px;
-    height: 170px;
-    display: block;
-    margin: 7vh 5vh;
-    margin-bottom: 7px;
-    margin-top:0px;
+    width: 200px;
+    height: 190px;
+    display: inline-block;
+    margin:0px;
     border: solid white 0.25px;
 }
 .tmi_text {
+    margin-top: 0;
     margin-bottom: 4px;
 }
-/* page 5 */
 
+/* page 5 */
 .five {
     text-align: center;
     align-items: center;
-    color: thistle;
+    color: white;
     display:inline;
 }
+.five h1 {
+    margin-bottom: 10px;
+}
 .five h5 {
-    font-family: 'Nanum Myeongjo', sans-serif;;
-    color: white;
+    margin-top: 10px;
+    margin-bottom: 55px;
 }
 .five a:hover {
     color:thistle;
 }
 .ct {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    padding-top: 25px;
-    font-family: 'Sunflower', sans-serif;
     text-decoration: underline;
-    color: white;
     font-size: 25px;
     font-style: italic;
     margin: 35px;
+    color: white;
 }
 
 .footer {
